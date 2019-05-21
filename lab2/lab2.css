@@ -1,0 +1,10 @@
+body {
+  background-image: url("fon.png");
+  }
+
+h1 {
+  font-style: initial;
+  font-size: 70px;
+  color: rgb(8, 63, 63);
+  text-align: center;
+}

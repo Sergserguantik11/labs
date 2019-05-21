@@ -1,0 +1,25 @@
+.main .screen p {
+  color: white;
+  margin: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 100%;
+  border: 1px solid #000;
+  transition: 0.1s ease
+}
+.main .screen p:hover {
+  border: 1px solid red;
+}
+#input-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: auto;
+  height: 40px;
+}
+#colorPicker {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.main .screen {
+  overflow: scroll;
+}

@@ -1,0 +1,98 @@
+body {
+	background-color: whitesmoke;
+}
+
+.result {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px -5px;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+header {
+	margin: -15px 0 10px 0;
+}
+
+header > span {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+input[type="button"] {
+	font-size: 20px;
+	border: none;
+	background-color: #d6def2;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+input[type="button"]:hover {
+	background-color: #bdc5d8;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.user {
+	width: 160px;
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	padding: 2px;
+	margin: 5px;
+}
+
+.user img {
+	width: 150px;
+	height: 150px;
+}
+
+.user > span {
+	font-size: 18px;
+	text-align: center;
+}
+
+.posts {
+	width: 720px;
+	margin: 0 auto 10px;
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+.posts > img {
+	width: 350px;
+	margin: 0 21%;
+}
+
+.posts > div {
+	font-size: 22px;
+}
+
+.groups {
+	width: 200px;
+	margin: 5px 10px 15px 10px;
+	text-align: center;
+}
+
+.groups > img {
+	width: 200px;
+	height: 200px;
+}
+
+.groups > span {
+	text-align: center;
+	font-size: 22px;
+}

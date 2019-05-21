@@ -1,0 +1,10 @@
+.clicked{
+	margin: 0;
+	z-index: 2;
+	border: 1px solid rgb(255, 255, 255);
+}
+
+.screen {
+	overflow: hidden;
+}
+

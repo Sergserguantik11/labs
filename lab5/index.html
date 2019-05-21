@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VK</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+   	<script type="text/javascript" src="http://vk.com/js/api/openapi.js"></script>
+</head>
+<body>
+	<div class="wrapper" />
+		<header id="header"></header>
+
+		<input type="button" value="Friends" id="friends" data-info="friends" />
+		<input type="button" value="Posts" id="posts" data-info="news"/>
+		<input type="button" value="Groups" id="groups" data-info="group" />
+
+		<div class="result" id="resultation"> </div>
+	</div>
+
+	<script type="text/x-handlebars-template" id="headerTemplate">
+			<span>Информация со страницы {{first_name}} {{last_name}}</span>
+	</script>
+
+	<script type="text/x-handlebars-template" id="friendsTemplate">
+		{{#each list}}
+		<div class="user">
+			<img src={{photo_max}} alt="not found :(" />
+			<span>{{first_name}} {{last_name}}</span>
+		</div>
+		{{/each}}
+	</script>
+
+	<script type="text/x-handlebars-template" id="newsTemplate">
+		{{#each list}}
+		{{#if attachment.photo.src_xbig}}
+		<div class="posts">
+			<img src={{attachment.photo.src_xbig}} alt="not found :(" />
+			<div class="postText">{{text}}</div>
+		</div>
+		{{/if}}
+		{{/each}}
+	</script>
+
+	<script type="text/x-handlebars-template" id="groupTemplate">
+		{{#each list}}
+		<div class="user">
+			<img src={{photo_big}} alt="not found :(" />
+			<span>{{name}}</span>
+		</div>
+		{{/each}}
+	</script>
+
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
